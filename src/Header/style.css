@@ -1,0 +1,11 @@
+#cl-caption{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 5px;
+    background: rgba(240, 240, 240, .6);
+    font-family: 'teko';
+}
+@font-face{
+font-family: 'teko';
+src: url('../fonts/Teko-Bold.ttf');
+}

@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #ccc;
+}
+
+.command-prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'quantico', sans-serif;
+
+}
+
+.command-line {
+    width: 60%;
+    height: 290px;
+    background-color: black;
+    color: white;
+    padding: 10px 6px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.command-prompt-header {
+    width: 60%;
+    height: 31px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.command-prompt-header img {
+    width: 20px;
+    margin: 7px;
+}
+
+div span {
+
+    animation: blink 1s step-end infinite;
+    border-bottom: 2px solid white;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+}
+
+[contenteditable="true"].cli {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+}
+
+[contenteditable="true"].cli br {
+    display: none;
+
+}
+
+[contenteditable="true"].cli * {
+    display: inline;
+    white-space: nowrap;
+}
+.maximize{
+    width: 100%;
+    height: 100%;
+}
+.cp-header-max-width{
+    width: 100%;
+}
+.cc {
+    display: flex;
+    flex-direction: row;
+}
+
+.cc::selection {
+    color: white;
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'quantico';
+    src: url('../src/fonts/Quantico-Regular.ttf');
+
+}
+
